@@ -25,17 +25,6 @@
             font-size: 18px;
             color: #333;
         }
-        .button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
@@ -43,7 +32,7 @@
         <source src="assets/wave_3ba974db.gif.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <video id="video2" style="display: none;" loop>
+    <video id="video2" style="display: none;">
         <source src="assets/sob_6e4a57eb.gif.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -52,7 +41,6 @@
         Your browser does not support the audio element.
     </audio>
     <div class="text" id="displayText">Don't hit the cherry</div>
-    <button class="button" onclick="playSecondVideoAndSound()">Play Video and Sound</button>
 
     <script src="app.js"></script>
 </body>
