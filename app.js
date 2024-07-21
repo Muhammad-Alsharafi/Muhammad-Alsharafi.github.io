@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let isPlayingFirstVideo = true;
 
     // Ensure video1 autoplays and loops on page load
-    video1.play().catch((error) => {
-        console.error('Error playing video1:', error);
-    });
+    video1.play();
 
     audio.onended = function() {
         video2.style.display = 'none';
