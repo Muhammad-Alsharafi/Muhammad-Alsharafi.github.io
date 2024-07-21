@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             video2.style.display = 'block';
             video2.play();
             audio.play();
-            displayText.textContent = "Happy now? She is crying";
+            displayText.textContent = "Happy now? She is crying 😑";
             isPlayingFirstVideo = false;
         }
     };
