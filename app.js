@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const displayText = document.getElementById('displayText');
     let isPlayingFirstVideo = true;
 
-    video1.onended = function() {
-        video1.play(); // Ensure video1 keeps looping
-    };
+    // Ensure video1 autoplays and loops on page load
+    video1.play().catch((error) => {
+        console.error('Error playing video1:', error);
+    });
 
     audio.onended = function() {
         video2.style.display = 'none';
