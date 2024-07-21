@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cherry</title>
+    <title>The Cherry and The Duck</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,6 +14,25 @@
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+        }
+        .tab.active {
+            background-color: #ccc;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
         }
         video {
             width: 80%;
@@ -28,19 +47,40 @@
     </style>
 </head>
 <body>
-    <video id="video1" autoplay muted loop>
-        <source src="assets/wave_3ba974db.gif.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <video id="video2" style="display: none;" loop>
-        <source src="assets/sob_6e4a57eb.gif.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <audio id="audio" preload="auto">
-        <source src="assets/plors-75447.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <div class="text" id="displayText">Don't hit the cherry</div>
+    <div class="tabs">
+        <div class="tab active" id="tabCherry">The Cherry</div>
+        <div class="tab" id="tabDuck">The Duck</div>
+    </div>
+    <div class="content active" id="contentCherry">
+        <video id="video1" autoplay muted loop>
+            <source src="assets/wave_3ba974db.gif.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video2" style="display: none;" loop>
+            <source src="assets/sob_6e4a57eb.gif.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio id="audioCherry" preload="auto">
+            <source src="assets/plors-75447.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="text" id="displayTextCherry">Don't hit the cherry</div>
+    </div>
+    <div class="content" id="contentDuck">
+        <video id="video3" autoplay muted loop>
+            <source src="assets/wave_4227cf32.gif.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video4" style="display: none;" loop>
+            <source src="assets/joy_6e0cd1f5.gif.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio id="audioDuck" preload="auto">
+            <source src="assets/soft-laughing-6445.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="text" id="displayTextDuck">Don't touch the duck, he is very tickly</div>
+    </div>
 
     <script src="app.js"></script>
 </body>
