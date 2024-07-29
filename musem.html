@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram App</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.scrollable-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area */
+    border: 3px solid #fff; /* Optional: adds a border around the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for effect */
+}
+
+.item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <div class="scrollable-list">
+        <div class="item">
+            <img src="assets/1.jpg" alt="Person 1">
+            <h3>WizhoOo</h3>
+            <p>"You either die a hero or you live long enough to see yourself become the villain."</p>
+        </div>
+        <div class="item">
+            <img src="assets/2.jpg" alt="Person 2">
+            <h3>Zoza</h3>
+            <p>"Excuse me, Which level of hell is this ?"</p>
+        </div>
+        <div class="item">
+            <img src="assets/3.png" alt="Person 3">
+            <h3>Just A Ghost</h3>
+            <p>"Dead inside"</p>
+        </div>
+        <div class="item">
+            <img src="assets/logo.png" alt="Person 0">
+            <h3>Be the Next person in our hall of fame </h3>
+            <p>Join the army now !</p>
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+</body>
+</html>
